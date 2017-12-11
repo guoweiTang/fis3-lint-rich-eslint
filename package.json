@@ -1,0 +1,89 @@
+{
+  "name": "fis3-lint-rich-eslint",
+  "version": "0.2.0",
+  "description": "based on eslint and has rich configuration for fis3",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "fis3"
+  ],
+  "author": {
+    "name": "ice.tang"
+  },
+  "license": "ISC",
+  "_id": "fis3-lint-rich-eslint@0.2.0",
+  "_npmVersion": "5.5.1",
+  "_nodeVersion": "8.9.0",
+  "_npmUser": {
+    "name": "ice.tang",
+    "email": "1214475704@qq.com"
+  },
+  "dist": {
+    "integrity": "sha512-JNX1yqaW5EsidHEpr/2c3qlhRXhTMcEtuTrEbGEfQi+2nVBRDdgl2c1D2Nb4m1/11yszvaMAnJ1B/gUUckqvXA==",
+    "shasum": "76ae33bda6a03b78b1f97c23087fb7db20635a5e",
+    "tarball": "https://registry.npmjs.org/fis3-lint-rich-eslint/-/fis3-lint-rich-eslint-0.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "ice.tang",
+      "email": "1214475704@qq.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/fis3-lint-rich-eslint-0.0.1.tgz_1512715165101_0.8236803042236716"
+  },
+  "_shasum": "b2be39a886f704d50de4db7ca45d96ba44c4090c",
+  "_resolved": "https://registry.npmjs.org/fis3-lint-rich-eslint/-/fis3-lint-rich-eslint-0.0.1.tgz",
+  "_from": "fis3-lint-rich-eslint@*",
+  "ignorePattern": "!node_modules/**",
+  "eslintConfig": {
+    "envs": [
+      "browser",
+      "es6",
+      "worker",
+      "amd",
+      "jquery"
+    ],
+    "globals": [
+      "__inline",
+      "__uri",
+      "__RESOURCE_MAP__",
+      "fis"
+    ],
+    "useEslintrc": false,
+    "rules": {
+      "indent": [
+        1,
+        4
+      ],
+      "semi-spacing": [
+        1
+      ],
+      "space-before-blocks": [
+        1,
+        "always"
+      ],
+      "for-direction": [
+        2
+      ],
+      "no-await-in-loop": [
+        2
+      ],
+      "no-console": [
+        0
+      ]
+    }
+  },
+  "dependencies": {
+    "eslint": "^4.12.1",
+    "mixin-deep": "^1.2.0"
+  },
+  "readme": "ERROR: No README data found!"
+}
