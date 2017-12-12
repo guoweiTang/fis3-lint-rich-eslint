@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-eslint",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "based on eslint and has rich configuration for fis3",
   "main": "index.js",
   "directories": {
@@ -13,6 +13,13 @@
     "eslint",
     "fis3"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoweiTang/fis3-lint-rich-eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guoweiTang/fis3-lint-rich-eslint/issues"
+  },
   "author": {
     "name": "ice.tang"
   },
