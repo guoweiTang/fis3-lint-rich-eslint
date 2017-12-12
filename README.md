@@ -1,5 +1,10 @@
 # fis3-lint-rich-eslint
-The fis3-lint-rich-eslint library exported as a fis3 plugin.
+The fis3-lint-rich-eslint library exported as a [fis3](http://fis.baidu.com/fis3/index.html) plugin.
+## Dependencies
+* [node]() (^4.0.0)
+* [eslint](https://github.com/eslint/eslint) (^4.12.1)
+* [mixin-deep](https://github.com/jonschlinkert/mixin-deep) (^1.2.0)
+
 ## Installation
 ``` shell
 $ npm install fis3-lint-rich-eslint [--save]
@@ -12,7 +17,7 @@ fis.match('*.js', {
 })
 
 ```
-See the **options** what is same as [eslint's CLIEngine](https://eslint.org/docs/developer-guide/nodejs-api#cliengine) for more details.
+See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/developer-guide/nodejs-api#cliengine) for more details.
 
 ## Default configs
 ``` js
@@ -84,3 +89,19 @@ As mentioned above, the following is introduce of **rules**:
 * 警告箭头函数的参数只有一个可省略圆括号
 * `禁止构造函数首字母不是大写`
 
+#### Local configuration
+You can use annotation to add configuration for the specilfied file, like the following:
+
+``` js
+/* eslint-env node, mocha */
+//dosomething...
+```
+``` js
+/* global var1, var2 */
+//dosomething...
+```
+``` js
+/* eslint eqeqeq: "off", curly: "error" */
+//dosomething...
+```
+Note: If you want to know more, please refer to [eslint configuration](https://eslint.org/docs/user-guide/configuring)
