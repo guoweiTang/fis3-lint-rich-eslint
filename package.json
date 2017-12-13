@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-eslint",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "description": "based on eslint and has rich configuration for fis3",
   "main": "index.js",
   "directories": {
@@ -65,6 +65,7 @@
       "fis"
     ],
     "useEslintrc": false,
+    "configFile": "./node_modules/eslint/conf/eslint-recommended.js",
     "rules": {
       "indent": [
         1,
@@ -73,13 +74,16 @@
       "semi-spacing": [
         1
       ],
+      "comma-spacing": [
+        1
+      ],
       "space-before-blocks": [
         1,
         "always"
       ],
       "space-before-function-paren": [
         1,
-        "always"
+        "never"
       ],
       "space-infix-ops": [
         1
@@ -95,6 +99,23 @@
       ],
       "key-spacing": [
         1
+      ],
+      "array-bracket-spacing": [
+        1
+      ],
+      "object-curly-spacing": [
+        1
+      ],
+      "spaced-comment": [
+        1,
+        "always",
+        {
+          "exceptions": [
+            "-",
+            "+",
+            "*"
+          ]
+        }
       ],
       "for-direction": [
         2
@@ -123,6 +144,19 @@
       "wrap-iife": [
         1,
         "inside"
+      ],
+      "semi": [
+        1,
+        "always"
+      ],
+      "guard-for-in": [
+        2
+      ],
+      "no-unused-vars": [
+        2,
+        {
+          "argsIgnorePattern": "^(require)|(exports)|(module)$"
+        }
       ],
       "no-alert": [
         1

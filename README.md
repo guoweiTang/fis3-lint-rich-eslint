@@ -41,53 +41,62 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
 ```
 As mentioned above, the following is introduce of **rules**:
 
+### Eslint:recommended
+* 启用推荐的规则,可参考[eslint rules](https://eslint.org/docs/rules/)中标记**√**的属性，推荐的规则可用后续规则覆盖
+
 #### Spaces
 
-* 警告缩进4个空格
-* 警告分号之前没空格，分号之后有空格
-* 警告语句块之前必须有空格
-* 警告函数括号之前必须有空格（匿名函数，命名函数，异步函数）
-* 警告要求操作符（+，-，*，/）周围有空格
-* 警告括号内不存在空格
-* 警告使用多个空格（非用于缩进）
-* 警告强制在关键字（if，else）前后使用空格
-* 警告对象字面量的键值前使用空格
+* [warn] 缩进为4个空格
+* [warn] 分号（逗号）前无空格，后有空格
+* [warn] 语句块之前有空格
+* [warn] 函数括号之前不能有空格（匿名函数，命名函数，异步函数）
+* [warn] 操作符（+，-，*，/）前后有空格
+* [warn] 括号内不存在空格
+* [warn] 禁止使用多个空格（非用于缩进）
+* [warn] 关键字（if，else）前后使用空格
+* [warn] 对象字面量的键值前使用空格
+* [warn] 数组内使用空格
+* [warn] 对象的花括号内使用空格
+* [warn] 注释“//”或“/*”后必须有空格，除了“-、+、\*”
 
 #### Syntax
-* `禁止for无限循环`
-* `禁止循环语句中用await`
-* `禁止直接调用Object.prototype下的内置属性（方法）`
-* `禁止switch语句必须有default分支`
-* `禁止“===、!==”代替“==、!=”`
-* `禁止循环中定义函数`
-* `禁止错误的循环语句，条件值在循环途中并未改变导致无限循环`
-* `禁止不存在await语句的async函数`
-* 警告IIFE需括号包裹函数部分
+* `[error] 禁止for无限循环`
+* `[error] 禁止循环语句中用await`
+* `[error] 禁止直接调用Object.prototype下的内置属性（方法）`
+* `[error] switch语句必须有default分支`
+* `[error] “===、!==”代替“==、!=”`
+* `[error] 禁止循环中定义函数`
+* `[error] 禁止错误的循环语句，条件值在循环途中并未改变导致无限循环`
+* `[error] async函数必须有await语句`
+* [warn] IIFE需括号包裹函数部分
+* [warn] 语句末尾必须添加分号（ASI）
+* `[error] for-in语句中必须有if语句`
+* `[error] 禁止存在未使用过的变量（函数），除了函数参数为“require,exports,module”`
 
-#### Will be discarded or not recommend
-* `禁止arguments.caller或arguments.callee`
-* 警告eval语句
-* `禁止with语句`
-* `禁止event全局变量（用参数形式代替）`
+#### Deprecated or not recommend
+* `[error] 禁止arguments.caller或arguments.callee`
+* [warn] 禁止eval语句
+* `[error] 禁止with语句`
+* `[error] 禁止event全局变量（用参数形式代替）`
 
 #### Debugging
-* 警告alert、confirm、prompt
+* [warn] 禁止alert、confirm、prompt
 
 #### Others
-* 警告扩展原生类型
-* `禁止基本类型用new方式声明`
-* `禁止对函数参数再次赋值`
-* 警告使用魔术数字
-* `禁止抛出非error对象`
-* `禁止非error对象作为Promise.reject的返回值`
-* `禁止明文初始化变量为undefined`
-* 警告var声明在作用域顶部
-* `禁止变量（函数）定义之前使用它们`
-* `禁止将undefined做为标识符`
-* `强制文件结尾必须有空行`
-* 警告当箭头函数的花括号不可省略时必须要有
-* 警告箭头函数的参数只有一个可省略圆括号
-* `禁止构造函数首字母不是大写`
+* [warn] 禁止扩展原生类型
+* `[error] 禁止基本类型用new方式声明`
+* `[error] 禁止对函数参数再次赋值`
+* [warn] 禁止使用魔术数字
+* `[error] 禁止抛出非error对象`
+* `[error] 禁止非error对象作为Promise.reject的返回值`
+* `[error] 禁止明文初始化变量为undefined`
+* [warn] var声明在作用域顶部
+* `[error] 禁止变量（函数）定义之前使用它们`
+* `[error] 禁止将undefined做为标识符`
+* `[error] 强制文件结尾必须有空行`
+* [warn] 当箭头函数的花括号不可省略时必须要有
+* [warn] 箭头函数的参数只有一个可省略圆括号
+* `[error] 构造函数首字母大写`
 
 #### Local configuration
 You can use annotation to add configuration for the specilfied file, like the following:
