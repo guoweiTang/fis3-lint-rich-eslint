@@ -1,6 +1,9 @@
 # ignore node_modules/*
 node_modules
 npm-debug.log
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+ISSUE_TEMPLATE.md
 
 # Git
 .git*
