@@ -222,6 +222,9 @@
       ]
     }
   },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
   "dependencies": {
     "eslint": "^4.12.1",
     "mixin-deep": "^1.2.0"

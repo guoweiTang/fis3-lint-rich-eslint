@@ -1,5 +1,7 @@
 # fis3-lint-rich-eslint
 The fis3-lint-rich-eslint library exported as a [fis3](http://fis.baidu.com/fis3/index.html) plugin.
+[![node](https://img.shields.io/node/v/fis3-lint-rich-eslint.svg)](https://img.shields.io/node/v/fis3-lint-rich-eslint.svg)
+[![npm](https://img.shields.io/npm/dt/fis3-lint-eslint.svg)](https://www.npmjs.com/package/fis3-lint-rich-eslint)
 ## Dependencies
 * [node]() (^4.0.0)
 * [eslint](https://github.com/eslint/eslint) (^4.12.1)
@@ -113,4 +115,4 @@ You can use annotation to add configuration for the specilfied file, like the fo
 /* eslint eqeqeq: "off", curly: "error" */
 //dosomething...
 ```
-Note: If you want to know more, please refer to [eslint configuration](https://eslint.org/docs/user-guide/configuring)
+- If you want to know more, please refer to [eslint configuration](https://eslint.org/docs/user-guide/configuring)
