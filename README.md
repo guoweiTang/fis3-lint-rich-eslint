@@ -44,7 +44,7 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
 As mentioned above, the following is introduce of **rules**:
 
 ### Eslint:recommended
-* 启用推荐的规则,可参考[eslint rules](https://eslint.org/docs/rules/)中标记**√**的属性，推荐的规则可用后续规则覆盖
+* 启用推荐的规则,可参考[eslint rules](https://eslint.org/docs/rules/)中标记**√**的属性，推荐的规则可用后续规则覆盖
 
 #### Spaces
 
