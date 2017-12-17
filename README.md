@@ -1,6 +1,8 @@
 # fis3-lint-rich-eslint
 The fis3-lint-rich-eslint library exported as a [fis3](http://fis.baidu.com/fis3/index.html) plugin.
 
+[![npm](https://img.shields.io/npm/v/fis3-lint-rich-eslint.svg)](https://www.npmjs.com/package/fis3-lint-rich-eslint)
+[![node](https://img.shields.io/node/v/fis3-lint-rich-eslint.svg)](https://nodejs.org/en/)
 [![npm](https://img.shields.io/npm/dt/fis3-lint-eslint.svg)](https://www.npmjs.com/package/fis3-lint-rich-eslint)
 ## Dependencies
 * [node]() (^4.0.0)
