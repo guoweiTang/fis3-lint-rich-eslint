@@ -102,7 +102,7 @@ As mentioned above, the following is introduce of **rules**:
 * [warn] 箭头函数的参数只有一个可省略圆括号
 * `[error] 构造函数首字母大写`
 
-#### Local configuration
+#### Editing rules from within your CSS
 You can use annotation to add configuration for the specilfied file, like the following:
 
 ``` js
@@ -117,4 +117,4 @@ You can use annotation to add configuration for the specilfied file, like the fo
 /* eslint eqeqeq: "off", curly: "error" */
 //dosomething...
 ```
-- If you want to know more, please refer to [eslint configuration](https://eslint.org/docs/user-guide/configuring)
+- If you want to know more, please refer to [eslint configuration](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments)
