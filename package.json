@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-eslint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "based on eslint and has rich configuration for fis3",
   "main": "index.js",
   "directories": {
@@ -65,7 +65,6 @@
       "fis"
     ],
     "useEslintrc": false,
-    "configFile": "./node_modules/eslint/conf/eslint-recommended.js",
     "rules": {
       "indent": [
         1,
