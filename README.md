@@ -118,4 +118,9 @@ You can use annotation to add configuration for the specilfied file, like the fo
 /* eslint eqeqeq: "off", curly: "error" */
 //dosomething...
 ```
-- If you want to know more, please refer to [eslint configuration](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments)
+```js
+/* eslint-disable */
+alert('foo');
+/* eslint-enable */
+```
+- If you want to know more, please refer to [eslint inline configuration](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments)

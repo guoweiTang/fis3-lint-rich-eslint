@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-eslint",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "based on eslint and has rich configuration for fis3",
   "main": "index.js",
   "directories": {
@@ -50,7 +50,7 @@
   "_resolved": "https://registry.npmjs.org/fis3-lint-rich-eslint/-/fis3-lint-rich-eslint-0.0.1.tgz",
   "_from": "fis3-lint-rich-eslint@*",
   "ignorePattern": "!node_modules/**",
-  "eslintConfig": {
+  "eslintConfigs": {
     "envs": [
       "browser",
       "es6",
