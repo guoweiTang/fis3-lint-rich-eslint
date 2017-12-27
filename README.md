@@ -5,11 +5,6 @@ The fis3-lint-rich-eslint library exported as a [fis3](http://fis.baidu.com/fis3
 [![node](https://img.shields.io/node/v/fis3-lint-rich-eslint.svg)](https://nodejs.org/en/)
 [![npm](https://img.shields.io/npm/dm/fis3-lint-rich-eslint.svg)](https://www.npmjs.com/package/fis3-lint-rich-eslint)
 
-## Dependencies
-* [node]() (^4.0.0)
-* [eslint](https://github.com/eslint/eslint) (^4.12.1)
-* [mixin-deep](https://github.com/jonschlinkert/mixin-deep) (^1.2.0)
-
 ## Installation
 ``` shell
 $ npm install fis3-lint-rich-eslint [--save]
@@ -27,6 +22,8 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
 ## Default configs
 ``` js
 {
+    'fix': false,
+    'allowOutfixed': false, // 允许输出修复后的文件到目录'/lint-fixed/**',生效的前提是fix值为true
     "envs": [
       "browser",
       "es6",

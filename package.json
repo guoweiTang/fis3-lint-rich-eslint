@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-eslint",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "based on eslint and has rich configuration for fis3",
   "main": "index.js",
   "directories": {
@@ -225,8 +225,7 @@
     "node": ">= 4.0.0"
   },
   "dependencies": {
-    "eslint": "^4.12.1",
-    "mixin-deep": "^1.2.0"
+    "eslint": "^4.12.1"
   },
   "readme": "ERROR: No README data found!"
 }
