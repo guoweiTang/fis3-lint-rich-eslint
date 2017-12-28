@@ -48,57 +48,58 @@ As mentioned above, the following is introduce of **rules**:
 
 #### Spaces
 
-* [warn] 缩进为4个空格
-* [warn] 分号（逗号）前无空格，后有空格
-* [warn] 语句块之前有空格
-* [warn] 函数括号之前不能有空格（匿名函数，命名函数，异步函数）
-* [warn] 操作符（+，-，*，/）前后有空格
-* [warn] 括号内不存在空格
-* [warn] 禁止使用多个空格（非用于缩进）
-* [warn] 关键字（if，else）前后使用空格
-* [warn] 对象字面量的键值前使用空格
-* [warn] 数组内使用空格
-* [warn] 对象的花括号内使用空格
-* [warn] 注释“//”或“/*”后必须有空格，除了“-、+、\*”
+* [warn: indent] 缩进为4个空格
+* [warn: semi-spacing] 分号前无空格，后有空格
+* [warn: comma-spacing] 逗号前无空格，后有空格
+* [warn: space-before-blocks] 语句块之前有空格
+* [warn: space-before-function-paren] 函数括号之前不能有空格（匿名函数，命名函数，异步函数）
+* [warn: space-infix-ops] 操作符（+，-，*，/）前后有空格
+* [warn: space-in-parens] 括号内不存在空格
+* [warn: no-multi-spaces] 禁止使用多个空格（非用于缩进）
+* [warn: keyword-spacing] 关键字（if，else）前后使用空格
+* [warn: key-spacing] 对象字面量的键值前使用空格
+* [warn: array-bracket-spacing] 数组内使用空格
+* [warn: object-curly-spacing] 对象的花括号内使用空格
+* [warn: spaced-comment] 注释“//”或“/*”后必须有空格，除了“-、+、\*”
 
 #### Syntax
-* `[error] 禁止for无限循环`
-* `[error] 禁止循环语句中用await`
-* `[error] 禁止直接调用Object.prototype下的内置属性（方法）`
-* `[error] switch语句必须有default分支`
-* `[error] “===、!==”代替“==、!=”`
-* `[error] 禁止循环中定义函数`
-* `[error] 禁止错误的循环语句，条件值在循环途中并未改变导致无限循环`
-* `[error] async函数必须有await语句`
-* [warn] IIFE需括号包裹函数部分
-* [warn] 语句末尾必须添加分号（ASI）
-* `[error] for-in语句中必须有if语句`
-* `[error] 禁止存在未使用过的变量（函数），除了函数参数为“require,exports,module”`
+* `[error: for-direction] 禁止for无限循环`
+* `[error: no-await-in-loop] 禁止循环语句中用await`
+* `[error: no-prototype-builtins] 禁止直接调用Object.prototype下的内置属性（方法）`
+* `[error: default-case] switch语句必须有default分支`
+* `[error: eqeqeq] “===、!==”代替“==、!=”`
+* `[error: no-loop-func] 禁止循环中定义函数`
+* `[error: no-unmodified-loop-condition] 禁止错误的循环语句，条件值在循环途中并未改变导致无限循环`
+* `[error: require-await] async函数必须有await语句`
+* [warn: wrap-iife] IIFE需括号包裹函数部分
+* [warn: semi] 语句末尾必须添加分号（ASI）
+* `[error: guard-for-in] for-in语句中必须有if语句`
+* `[error: no-unused-vars] 禁止存在未使用过的变量（函数），除了函数参数为“require,exports,module”`
 
 #### Deprecated or not recommend
-* `[error] 禁止arguments.caller或arguments.callee`
-* [warn] 禁止eval语句
-* `[error] 禁止with语句`
-* `[error] 禁止event全局变量（用参数形式代替）`
+* `[error: no-caller] 禁止arguments.caller或arguments.callee`
+* [warn: no-eval] 禁止eval语句
+* `[error: no-with] 禁止with语句`
+* `[error: no-restricted-globals] 禁止event全局变量（用参数形式代替）`
 
 #### Debugging
-* [warn] 禁止alert、confirm、prompt
+* [warn: no-alert] 禁止alert、confirm、prompt
 
 #### Others
-* [warn] 禁止扩展原生类型
-* `[error] 禁止基本类型用new方式声明`
-* `[error] 禁止对函数参数再次赋值`
-* [warn] 禁止使用魔术数字
-* `[error] 禁止抛出非error对象`
-* `[error] 禁止非error对象作为Promise.reject的返回值`
-* `[error] 禁止明文初始化变量为undefined`
-* [warn] var声明在作用域顶部
-* `[error] 禁止变量（函数）定义之前使用它们`
-* `[error] 禁止将undefined做为标识符`
-* `[error] 强制文件结尾必须有空行`
-* [warn] 当箭头函数的花括号不可省略时必须要有
-* [warn] 箭头函数的参数只有一个可省略圆括号
-* `[error] 构造函数首字母大写`
+* [warn: no-extend-native] 禁止扩展原生类型
+* `[error: no-new-wrappers] 禁止基本类型用new方式声明`
+* `[error: no-param-reassign] 禁止对函数参数再次赋值`
+* [warn: no-magic-numbers] 禁止使用魔术数字
+* `[error: no-throw-literal] 禁止抛出非error对象`
+* `[error: prefer-promise-reject-errors] 禁止非error对象作为Promise.reject的返回值`
+* `[error: no-undef-init] 禁止明文初始化变量为undefined`
+* [warn: vars-on-top] var声明在作用域顶部
+* `[error: no-use-before-define] 禁止变量（函数）定义之前使用它们`
+* `[error: no-undefined] 禁止将undefined做为标识符`
+* `[error: eol-last] 强制文件结尾必须有空行`
+* [warn: arrow-body-style] 当箭头函数的花括号不可省略时必须要有
+* [warn: arrow-parens] 箭头函数的参数只有一个可省略圆括号
+* `[error: new-cap] 构造函数首字母大写`
 
 #### Editing rules from within your CSS
 You can use annotation to add configuration for the specilfied file, like the following:
