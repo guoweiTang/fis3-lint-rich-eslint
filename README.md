@@ -32,6 +32,8 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
       "jquery"
     ],
     "globals": [
+      "module",
+      "exports",
       "__inline",
       "__uri",
       "__RESOURCE_MAP__",
