@@ -1,6 +1,6 @@
 {
   "name": "fis3-lint-rich-eslint",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "based on eslint and has rich configuration for fis3",
   "main": "index.js",
   "scripts": {
