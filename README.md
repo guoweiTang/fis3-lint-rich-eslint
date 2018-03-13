@@ -24,30 +24,39 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
 {
     'fix': false,
     'allowOutfixed': false,
-    "envs": [
-      "browser",
-      "es6",
-      "worker",
-      "amd",
-      "jquery"
+    'envs': [
+      'browser',
+      'es6',
+      'worker',
+      'amd',
+      'jquery'
     ],
-    "globals": [
-      "module",
-      "exports",
-      "__inline",
-      "__uri",
-      "__RESOURCE_MAP__",
-      "fis"
+    'globals': [
+      'module',
+      'exports',
+      '__inline',
+      '__uri',
+      '__RESOURCE_MAP__',
+      'fis'
     ],
-    "useEslintrc": false,
-    "rules": rules
+    'ignoreFiles': [
+        'bower_components/**',
+        'node_modules/**',
+        'lint-fixed/**',
+        'js-conf.js'
+    ],
+    'useEslintrc': false,
+    'rules': rules
 }
 ```
 ### allowOutfixed: Boolean | [Boolean, options]
-Output the restored file to the directory '/lint-fixed/**', the premise is that the value of fix is true
+Output the restored file to the directory '/lint-fixed/**', the premise is that the value of fix is true.
 #### options
-* `"root": true` Get root permissions, it will modify the source file，this operation does't promise correctness, so be careful!!!
-* `"dirname": '/lint-fixed'` Specify the root directory of the repaired file output
+* `'root': true` Get root permissions, it will modify the source file，this operation does't promise correctness, so be careful!!!
+* `'dirname': '/lint-fixed'` Specify the root directory of the repaired file output
+### ignoreFiles: [String]
+ [Glob](https://github.com/isaacs/node-glob) patterns for paths to ignore.
+ **Be careful the property named `ignorePattern` is discarded.**
 
 ### Rules
 As mentioned above, the following is introduce of **rules**:
@@ -70,7 +79,7 @@ You can use annotation to add configuration for the specilfied file, like the fo
 //dosomething...
 ```
 ``` js
-/* eslint eqeqeq: "off", curly: "error" */
+/* eslint eqeqeq: 'off', curly: 'error' */
 //dosomething...
 ```
 ```js
