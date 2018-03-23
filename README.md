@@ -16,6 +16,23 @@ fis.match('*.js', {
     lint: fis.plugin('rich-eslint'[, options])
 })
 
+/**
+ * The tool exposes an object containing the exception information through the 'fis.set("ESLINT_RESULT",obj)' method.
+ * Get it through 'fis.get("ESLINT_RESULT")' method,
+ * and it has two attributes that are 'errCount' and 'totalCount', as follows:
+ */
+fis.match('::package', {
+    prepackager: function(content, file, settings) {
+        let eslintErrCount = fis.get('ESLINT_RESULT.errCount');
+        
+        // Exit the program when there is a eslint error.
+        if (eslintErrCount) {
+            process.exit()
+        }
+        
+        return content;
+    }
+})
 ```
 See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/developer-guide/nodejs-api#cliengine) for more details.
 
@@ -62,7 +79,7 @@ Output the restored file to the directory '/lint-fixed/**', the premise is that 
 As mentioned above, the following is introduce of **rules**:
 
 #### Eslint:recommended
-* 启用推荐的规则,可参考[eslint rules](https://eslint.org/docs/rules/)中标记**√**的属性，推荐的规则可用后续规则覆盖
+* The rule of ['eslint:recommended'](https://eslint.org/docs/rules/) that has the right mark is enabled by default. 
 
 #### Eslint-config-lagou
 * 配置参考[eslint-config-lagou](https://github.com/guoweiTang/eslint-config-lagou)定义
