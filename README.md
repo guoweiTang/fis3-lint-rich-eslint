@@ -41,16 +41,8 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
 {
     'fix': false,
     'allowOutfixed': false,
-    'envs': [
-      'browser',
-      'es6',
-      'worker',
-      'amd',
-      'jquery'
-    ],
+    'envs': envs,
     'globals': [
-      'module',
-      'exports',
       '__inline',
       '__uri',
       '__RESOURCE_MAP__',
@@ -66,6 +58,10 @@ See the **options** what is same as [eslint CLIEngine](https://eslint.org/docs/d
     'rules': rules
 }
 ```
+`Globals and ignoreFiles are non-overlay, but envs is overlay.`
+
+### Envs
+The value refer to configuration of [eslint-config-lagou](https://github.com/guoweiTang/eslint-config-lagou).
 ### allowOutfixed: Boolean | [Boolean, options]
 Output the restored file to the directory '/lint-fixed/**', the premise is that the value of fix is true.
 #### options
