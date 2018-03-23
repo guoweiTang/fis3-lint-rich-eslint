@@ -82,7 +82,7 @@ As mentioned above, the following is introduce of **rules**:
 * The rule of ['eslint:recommended'](https://eslint.org/docs/rules/) that has the right mark is enabled by default. 
 
 #### Eslint-config-lagou
-* 配置参考[eslint-config-lagou](https://github.com/guoweiTang/eslint-config-lagou)定义
+* The rule of ['eslint-config-lagou'](https://github.com/guoweiTang/eslint-config-lagou) is enabled by default
 
 #### Editing rules from within your js
 You can use annotation to add configuration for the specilfied file, like the following:
